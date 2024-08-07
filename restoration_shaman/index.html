@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WOTLK Restoration Shaman Simulator</title>
+    <meta charset="utf-8">
+
+    <link rel="icon" type="image/x-icon" href="/wotlk/assets/favicon_io/favicon.ico">
+
+    <meta name="description" content="Simulations for World of Warcraft® Classic Wrath of the Lich King.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preload" href="/wotlk/assets/database/db.json" as="fetch" crossOrigin="anonymous">
+
+    
+    <link rel="stylesheet" href="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/jquery.tablesorter/2.31.3/js/jquery.tablesorter.min.js" integrity="sha512-qzgd5cYSZcosqpzpn7zF2ZId8f/8CHmFKZ8j7mU4OUXTNRd5g+ZHBPsgKEwoqxCtdQvExE5LprwwPAgoicguNg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/apexcharts/3.33.1/apexcharts.min.js"></script>
+    
+    
+    <script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/Chart.js/3.5.1/chart.min.js" integrity="sha512-Wt1bJGtlnMtGP0dqNFH1xlkLBNpEodaiQ8ZN5JLA5wpc1sUlk/O5uuOMNgvzddzkpvZ9GLyYNa8w2s7rqiTk5Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/pako/2.0.4/pako.min.js" type="module"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-T3HBB0LXNX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-YEJ8MEHGV2');
+    </script> -->
+    <script type="module" crossorigin src="/wotlk/bundle/index-ffd43b94.entry.js"></script>
+    <link rel="modulepreload" crossorigin href="/wotlk/bundle/index-30ff6210.chunk.js">
+    <link rel="modulepreload" crossorigin href="/wotlk/bundle/detailed_results-6e5cda71.chunk.js">
+    <link rel="modulepreload" crossorigin href="/wotlk/bundle/preset_utils-1fa939d9.chunk.js">
+    <link rel="modulepreload" crossorigin href="/wotlk/bundle/totem_inputs-15e23287.chunk.js">
+    <link rel="modulepreload" crossorigin href="/wotlk/bundle/sim-d308b7e0.chunk.js">
+    <link rel="stylesheet" href="/wotlk/bundle/index-a1daf39e.style.css">
+  </head>
+  <body id="bootstrap-overrides">
+  </body>
+  <!-- Load wowhead scripts after done loading everything else -->
+  <script>const whTooltips = {colorLinks: true};</script>
+  <script src="https://dalaran.city/wow.zamimg.com/js/tooltips.js"></script>
+  <script>{let A=window.WH.xhrJsonRequest;let D={225921:{i:54801,r:[['Phase 3','Phase 1'],[67,63],[100,93],[35,31],[694,634],[232,225],]},225922:{i:54802,r:[['Phase 3','Phase 1'],[67,62],[51,48],[34,32],[89,84],[232,225],]},225923:{i:54806,r:[['Phase 3','Phase 1'],[92,87,1],[92,85],[550,515],[80,75],[343,335],[642,620],['153.91','149.2'],[1390,1322],[232,225],]},225924:{i:54803,r:[['Phase 3','Phase 1'],[76,69],[45,40],[232,225],]},225925:{i:54804,r:[['Phase 3','Phase 1'],[51,48],[78,72],[45,42],[232,225],]},225926:{i:54805,r:[['Phase 3','Phase 1'],[51,48],[78,72],[45,42],[232,225],]},};let V=(t,s,a,n)=>n?t.replace(s,a):t.replaceAll(new RegExp(s,"g"),a);let W=(u,c,i,d)=>A(u.replace(i,d.i),r=>d.r.forEach(n=>r.tooltip=V(r.tooltip,...n))||c(r));let X=(u,c,i,d)=>i&&d?W(u,c,i,d):A(u,c);let Y=(u,c,i)=>X(u,c,i,D[i]);window.WH.xhrJsonRequest=(u,c)=>Y(u,c,u.match(/tooltip\/item\/(\d+)/)?.[1])}</script>
+	<!--<script>const aowow_tooltips = {colorlinks: true}</script>
+	<script type="text/javascript" src="https://wotlk.evowow.com/static/widgets/power.js"></script>-->
+</html>
