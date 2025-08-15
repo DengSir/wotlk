@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WOTLK Feral Tank Druid Simulator</title>
+    <meta charset="utf-8">
+
+    <link rel="icon" type="image/x-icon" href="/wotlk/assets/favicon_io/favicon.ico">
+
+    <meta name="description" content="Simulations for World of Warcraft® Classic Wrath of the Lich King.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preload" href="/wotlk/assets/database/db.json" as="fetch" crossOrigin="anonymous">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.3/js/jquery.tablesorter.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pako/2.0.4/pako.min.js" type="module"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-T3HBB0LXNX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-YEJ8MEHGV2');
+    </script> -->
+    <script type="module" crossorigin src="/wotlk/bundle/index-a964c143.entry.js"></script>
+    <link rel="modulepreload" crossorigin href="/wotlk/bundle/index-30ff6210.chunk.js">
+    <link rel="modulepreload" crossorigin href="/wotlk/bundle/detailed_results-c8b6aea5.chunk.js">
+    <link rel="modulepreload" crossorigin href="/wotlk/bundle/preset_utils-3162f846.chunk.js">
+    <link rel="modulepreload" crossorigin href="/wotlk/bundle/suggest_gems_action-c99786ec.chunk.js">
+    <link rel="modulepreload" crossorigin href="/wotlk/bundle/apl_utils-baa5fac5.chunk.js">
+    <link rel="modulepreload" crossorigin href="/wotlk/bundle/sim-d1f100cf.chunk.js">
+    <link rel="stylesheet" href="/wotlk/bundle/index-b9dbe496.style.css">
+  </head>
+  <body id="bootstrap-overrides">
+  </body>
+  <!-- Load wowhead scripts after done loading everything else -->
+  <script>const whTooltips = {colorLinks: true};</script>
+  <script src="../tooltips.js"></script>
+  <script>
+    {
+      let A = window.WH.xhrJsonRequest;
+      let D = {
+          ['464972']: {
+              i: '73828',
+              r: [
+                  [30, 15],
+                  ['乌瑞恩的力量', '肯瑞托的智慧'],
+                  ['暴风城的国王将他的力量赐予你，', ''],
+              ],
+          },
+          ['1249838']: {
+              i: '67671',
+              r: [
+                [1008, 1728],
+              ],
+          },
+          ['1249740']: {
+              i: '67669',
+              r: [
+                [590, 1011],
+              ],
+          },
+      };
+      let F = (r) => (r && r.tooltip && (r.tooltip = r.tooltip.replaceAll(/>\s+</g, '><').trim()), r);
+      let G = (c) => (r) => c(F(r));
+      let T = (s, p, t, a) => a ? s.replace(p, t) : s.replaceAll(new RegExp(p, 'g'), t);
+      let R = (u, c, i, d) => A(u.replace(i, d.i), (r) => d.r.forEach((n) => (r.tooltip = T(r.tooltip, ...n))) || c(r));
+      let B = (u, c, i, d) => (i && d) ? R(u, c, i, d) : A(u, c);
+      let C = (u, c, i) => B(u, c, console.log(i) || i, D[i]);
+      window.WH.xhrJsonRequest = (url, cb) => C(console.log(url, url.match(/tooltip2?\/(?:item|spell)\/(\d+)/)) || url, G(cb), url.match(/tooltip2?\/(?:item|spell)\/(\d+)/)?.[1]);
+    }
+  </script>
+	<!--<script>const aowow_tooltips = {colorlinks: true}</script>
+	<script type="text/javascript" src="https://wotlk.evowow.com/static/widgets/power.js"></script>-->
+</html>
